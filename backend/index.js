@@ -26,7 +26,7 @@ const PurchaseSchema = new mongoose.Schema({
 const Purchase = mongoose.model('Purchase', PurchaseSchema);
 
 // Stripe Configuration
-const stripe = new Stripe('sk_test_51QYEBKLT4FN0XCJaAa9slmgkYQyeEXq1MQBonHYj9Zt4bR3roRjfKoRj4nEcgGJevdt5RhfMlWPOq2sGfvoDMWTm00s1dPaHTV');
+const stripe = new Stripe('');
 
 app.post('/api/checkout', async (req, res) => {
     const { email } = req.body;
